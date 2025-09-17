@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heaviest Birds Table</title>
+</head>
+
+<body>
+    <!-- this is a tutorial for tables on html -->
+    <h1>Heaviest Birds</h1>
+
+    <!-- td = table data = represents a cell -->
+    <!-- tr = table row -->
+    <!-- th = table header (you need to put them in a row) -->
+    <!-- thead / tfoot / tbody = an indicator if your table is the head, foot, or body (optional, just to add more structure to the code)  -->
+    <!-- rowspan and colspan defines the number of rows or columns one data has -->
+    <table>
+        <thead>
+            <!-- add a colspan to the header that has the sub-headers -->
+            <tr>
+                <th rowspan="2">Animal</th>
+                <th colspan="2">Average Mass</th>
+                <th rowspan="2">Flighted</th>
+            </tr>
+            <!-- if you have subheaders, make a new row for them -->
+            <tr>
+                <!-- this is for the average mass sub-header -->
+                <th>kg</th>
+                <th>lb</th>
+
+                <!-- if you want to put sub-headers in another main header, all you have to do is generate more th and adjust the colspan of that main header -->
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ostrich</td>
+                <td>104</td>
+                <td>230</td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <td>Somali Ostrich</td>
+                <td>90</td>
+                <td>200</td>
+                <td>No</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
